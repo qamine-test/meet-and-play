@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  moduleId: module.id,
+  selector: 'ip-{{name}}',
+  templateUrl: '{{name}}.component.html',
+  styleUrls: ['{{name}}.component.css']
+})
+/**
+ * This class represents the {{nameUpperCase}}Component.
+ */
+export class {{nameUpperCase}}Component {
+}

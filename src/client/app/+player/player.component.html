@@ -1,0 +1,55 @@
+<div class="news-title">
+  <select (change)="onPositionChange($event.target.value)">
+    <option value="G">Goalies</option>
+    <option value="LD">Left Defenders</option>
+    <option value="RD">Right Defenders</option>
+    <option value="UD">Universal Defenders</option>
+    <option value="LW">Left Wingers</option>
+    <option value="C">Centers</option>
+    <option value="RW">Right Wingers</option>
+    <option value="UW">Universal Wingers</option>
+  </select>
+
+  <select (change)="onProjectionChange($event.target.value)">
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+  </select>
+</div>
+<md-data-table layout-fill>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Career</th>
+    <th>Goalie</th>
+    <th>Defence</th>
+    <th>Attack</th>
+    <th>Shot</th>
+    <th>Pass</th>
+    <th>Technique</th>
+    <th>Agression</th>
+    <th>Overall</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let player of playerService.get() | async" class="news-item">
+    <td>{{player.name}}</td>
+    <td>{{player.age}}</td>
+    <td>{{player.careerLength}}</td>
+    <td>{{player.goalie}}</td>
+    <td>{{player.defence}}</td>
+    <td>{{player.attack}}</td>
+    <td>{{player.shot}}</td>
+    <td>{{player.pass}}</td>
+    <td>{{player.technique}}</td>
+    <td>{{player.aggression}}</td>
+    <td>{{player.overall}}</td>
+  </tr>
+  </tbody>
+</md-data-table>

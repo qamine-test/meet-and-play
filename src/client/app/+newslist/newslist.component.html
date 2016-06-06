@@ -1,0 +1,6 @@
+<div class="news-title">Новости компании</div>
+<div>
+    <div *ngFor="let news of newsService.get() | async" class="news-item">
+      <div>{{news.title}}</div>
+    </div>
+</div>
