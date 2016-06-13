@@ -12,12 +12,13 @@ import {FooterComponent} from './shared/footer/footer.component';
 import {NewsService} from "./services/news.service";
 import {AlphabetService} from "./services/alphabet.service";
 import {PlayerService} from "./services/player.service";
+import {ResponseService} from "./services/response.service";
 import {MD_SIDENAV_DIRECTIVES} from '@angular2-material/sidenav';
 
 @Component({
   moduleId: module.id,
   selector: 'ip-app',
-  viewProviders: [HTTP_PROVIDERS, NewsService, PlayerService, AlphabetService],
+  viewProviders: [HTTP_PROVIDERS, NewsService, PlayerService, AlphabetService, ResponseService],
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
   directives: [ROUTER_DIRECTIVES, NavbarComponent, FooterComponent, MD_SIDENAV_DIRECTIVES, StandingsComponent]

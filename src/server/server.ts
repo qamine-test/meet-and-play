@@ -3,6 +3,7 @@ import express = require('express');
 import path = require('path');
 import {newsAPI} from './api/news';
 import {playerAPI} from './api/player';
+import {responseAPI} from './api/response';
 
 var port: number = process.env.PORT || 8080;
 var app = express();
@@ -22,6 +23,7 @@ var renderIndex = (req: express.Request, res: express.Response) => {
 };
 newsAPI(app);
 playerAPI(app);
+responseAPI(app);
 
 app.get('/*', renderIndex);
 

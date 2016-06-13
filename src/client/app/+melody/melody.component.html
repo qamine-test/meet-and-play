@@ -9,9 +9,7 @@
         <img src="assets/melody/notes.png" class="md-card-image category">
         <span class="glyphicon glyphicon-play play-icon"></span>
         <md-card-actions layout="column" layout-align="start">
-          <button md-raised-button class="md-raised md-primary">Катя</button>
-          <button md-raised-button class="md-raised">Вика</button>
-          <button md-raised-button class="md-raised">Леша</button>
+          <button *ngFor="let response of responses" md-raised-button class="md-raised md-primary">{{response.name}}</button>
         </md-card-actions>
       </md-card>
       <md-card class="inactive category-card">

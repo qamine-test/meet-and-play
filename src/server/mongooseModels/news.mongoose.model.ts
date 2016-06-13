@@ -11,4 +11,10 @@ export const NewsSchema = new mongoose.Schema({
   publishingDate: Date
 });
 
+export function responseObjectFromRequest(requestBody) {
+  return {
+    name: requestBody.name,
+  }
+}
+
 export const News = mongoose.model<INewsModel>('News', NewsSchema);

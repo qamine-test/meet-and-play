@@ -9,10 +9,10 @@
               </md-card-title-text>
             </md-card-title>
             <md-card-content>
-                <md-input style="width:100%;height: auto;" placeholder="Имя"></md-input>
+                <md-input [(ngModel)]="playerResponse.name" style="width:100%;height: auto;" placeholder="Имя"></md-input>
             </md-card-content>
             <md-card-actions layout="row" layout-align="end center">
-              <button md-raised-button class="md-raised md-primary" style="width:100%">Primary</button>
+              <button md-raised-button (click)="sendResponse()" class="md-raised md-primary" style="width:100%">Я знаю!</button>
             </md-card-actions>
           </md-card>
     </div>
