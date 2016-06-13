@@ -1,0 +1,43 @@
+.category {
+}
+.inactive {
+  opacity: 0.5;
+
+}
+.category-title {
+  padding:10px;
+}
+.category-title.magenta {
+  border-bottom: 1px solid magenta;
+  color: magenta;
+}
+
+.category-title.violet {
+  border-bottom: 1px solid darkviolet;
+  color: darkviolet;
+}
+
+.category-title.green {
+  border-bottom: 1px solid #00FA9A;
+  color: #00FA9A;
+}
+
+.category-title.orange {
+  border-bottom: 1px solid #FFA500;
+  color: #FFA500;
+}
+
+.play-icon {
+  position: absolute;
+  font-size: 78px;
+  top: 70px;
+  left:45%;
+}
+
+.category-card {
+  position:relative;
+}
+
+.player {
+  color: black;
+}

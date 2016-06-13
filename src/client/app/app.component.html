@@ -1,5 +1,12 @@
 <ip-navbar></ip-navbar>
 <div class="content">
-    <router-outlet></router-outlet>
+  <md-sidenav-layout>
+    <md-sidenav #left (open)="mybutton.focus()" [opened]="true" mode="side" layout-padding>
+      <ip-standings></ip-standings>
+    </md-sidenav>
+    <md-content layout-padding>
+      <router-outlet></router-outlet>
+    </md-content>
+  </md-sidenav-layout>
 </div>
 <footer ip-footer class="footer"></footer>

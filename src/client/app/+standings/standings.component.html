@@ -1,0 +1,16 @@
+<div>
+<md-data-table layout-fill>
+  <thead>
+  <tr>
+    <th class="md-text-cell">Игрок</th>
+    <th>Очки</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let player of players">
+    <td class="md-text-cell">{{ player.name }}</td>
+    <td>{{ player.points }}</td>
+  </tr>
+  </tbody>
+</md-data-table>
+</div>
